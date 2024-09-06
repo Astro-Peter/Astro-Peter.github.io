@@ -18,6 +18,12 @@ export const App = () => {
       setUser(user);
       setPopout(null);
     }
+    async function fetchImg() {
+      const response = await fetch("https://dog.ceo/api/breeds/image/random");
+      const data = await response.json();
+      window.img = data?.message
+    }
+    fetchImg();
     fetchData();
   }, []);
 
