@@ -6,7 +6,7 @@
     <meta name="description" content="Sports Game Results Predictor">
     <meta name="keywords" content="sports, leagues, NFL, NBA, week results, predictor, football">
     <title>Sports Game Results Predictor</title>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <main>
@@ -15,20 +15,20 @@
             <nav>
                 <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td><a href="ascii-art.html">Home</a></td>
-                        <td><a href="standings.html">Popular</a></td>
-                        <td><a href="predictions.html">Predictions</a></td>
-                        <td><a href="standings.html">User Leagues</a></td>
-                        <td><a href="contact.html">About</a></td>
+                        <td><button class="button nav" href="">Home</button></td>
+                        <td><button class="button nav" href="standings.html">Popular</button></td>
+                        <td><button class="button nav" href="predictions.html">Predictions</button></td>
+                        <td><button class="button nav" href="standings.html">User Leagues</button></td>
+                        <td><button class="button nav" href="contact.html">About</button></td>
                     </tr>
                 </table>
                 
             </nav>
         </header>
-        <table width="100%" cellpadding="0" cellspacing="0">
+        <table class="main-part" width="90%" cellpadding="0" cellspacing="0">
             <tr>
-                <td width="70%">
-                    <section id="predictions">
+                <td width="65%">
+                    <section class="predictions">
                         <h2>Upcoming Matches</h2>
                             <section class="upcoming-game">
                                 <table cellpadding="0" cellspacing="10">
@@ -39,6 +39,8 @@
                                         </td>
                                         <td>
                                             Teams
+                                        </td>
+                                        <td>
                                         </td>
                                         <td>
                                             Line
@@ -53,6 +55,9 @@
                                         </td>
                                         <td>
                                             Browns
+                                        </td>
+                                        <td>
+                                            <img class="team-logo" src="img/cleveland_browns_logo_primary_2024_sportslogosnet-6696.png">
                                         </td>
                                         <td rowspan="2" align="right">
                                             -3.5
@@ -69,6 +74,9 @@
                                         <td>
                                             Cowboys
                                         </td>
+                                        <td>
+                                            <img class="team-logo" src="img/dallas_cowboys_logo_primary_19964601.png">
+                                        </td>
                                     </tr>
                                 </table>
                             </section>
@@ -81,6 +89,8 @@
                                         </td>
                                         <td>
                                             Teams
+                                        </td>
+                                        <td>
                                         </td>
                                         <td>
                                             Line
@@ -96,6 +106,9 @@
                                         <td>
                                             Cardinals
                                         </td>
+                                        <td>
+                                            <img class="team-logo" src="img/arizona_cardinals_logo_primary_20058304.png">
+                                        </td>
                                         <td rowspan="2" align="right">
                                             +2.0
                                         </td>
@@ -110,6 +123,9 @@
                                         <td>
                                             Jets
                                         </td>
+                                        <td>
+                                            <img class="team-logo" src="img/new_york_jets_logo_primary_2024_sportslogosnet-7417.png">
+                                        </td>
                                     </tr>
                                 </table>
                             </section>
@@ -119,6 +135,15 @@
                     <h2>Finished Predictions</h2>
                     <section class="finished-match">
                         <table width="100%">
+                            <tr>
+                                <td align="center">
+                                    <img class="team-logo" src="img/new_england_patriots_logo_primary_20005480.png">
+                                </td>
+                                <td width="0%"></td>
+                                <td align="center">
+                                    <img class="team-logo" src="img/new_york_giants_logo_primary_20005208.png">
+                                </td>
+                            </tr>
                             <tr>
                                 <td align="center">
                                     Patriots
@@ -145,6 +170,15 @@
                         <table width="100%">
                             <tr>
                                 <td align="center">
+                                    <img class="team-logo" src="img/buffalo_bills_logo_primary_19747050.png">
+                                </td>
+                                <td width="0%"></td>
+                                <td align="center">
+                                    <img class="team-logo" src="img/kansas.png">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="center">
                                     Bills
                                 </td>
                                 <td width="0%"></td>
@@ -165,21 +199,6 @@
                             </tr>
                         </table>
                     </section>
-                    <h5>Cuda code</h5>
-                    <pre><code>
-#include &lt;cuda_runtime.h&gt;
-#include &lt;cuda_helpers.h&gt;
-#include &lt;cstdio&gt;
-
-__global__ void cuda_hello() {
-    printf("Hello, world!");
-}
-
-int main() {
-    cuda_hello&lt;&lt;&lt;1, 1&gt;&gt;&gt;();
-    cudaDeviceSynchronize();
-}
-                      </code></pre>
                 </section></td>
             </tr>
         </table>
