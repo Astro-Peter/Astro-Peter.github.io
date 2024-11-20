@@ -2,9 +2,12 @@ body {
     background-color: #B0FA4D;
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
     .button-header {
-        background-color: aquagit;
+        background-color: aqua;
+    }
+    body {
+        background-color: white;
     }
 }
 
