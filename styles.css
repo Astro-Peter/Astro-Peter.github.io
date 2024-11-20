@@ -1,0 +1,127 @@
+body {
+    background-color: #B0FA4D;
+}
+
+@media (orientation: portrait) {
+    .button-header {
+        background-color: aqua;
+    }
+    body {
+        background-color: white;
+    }
+}
+
+.page-link {
+    flex: 1;
+}
+
+.left-nav {
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+}
+
+.right-nav {
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+}
+
+.button-header {
+    display: flex;
+    border: 10px solid powderblue;
+    background-color: #4DFAAD;
+    border-radius: 25px;
+}
+
+.flex-container {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+.upcoming-game {
+    flex: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+    border: 10px solid black;
+    margin: 20px;
+}
+
+.finished-match {
+    flex: 2;
+    border-top: 4px solid black;
+    padding-top: 4px;
+
+}
+
+.team-logo {
+    width: 64px;
+    height: 40px;
+}
+.predictions {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    background-color: white;
+}
+.striped-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.striped-table th, .striped-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.striped-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.striped-table th {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+#finished-predictions {
+    flex: 3;
+    border: 5px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+    margin-right: 1%;
+    margin-left: 1%;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    font-size:medium;
+    flex: 1;
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav:hover {
+    background-color: red;
+}
+
+.nav.active {
+    background-color: turquoise;
+    color: #333;
+}
