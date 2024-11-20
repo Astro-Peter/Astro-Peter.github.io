@@ -2,17 +2,19 @@ body {
     background-color: #B0FA4D;
 }
 
+.page-link {
+    flex: 1;
+    margin: 1%;
+    padding: 2%;
+    /* height: 20%; */
+}
+
 .nav {
     flex: 1;
     text-align: left;
+    margin: 2%;
     /* padding: 1%; */
-    width: 10%;
-}
-
-.nav-button {
-    flex: 1;
-    text-align: center;
-    color: white;
+    /* width: 2    0%; */
 }
 
 .button-header {
@@ -21,11 +23,11 @@ body {
     border: 10px solid powderblue;
     background-color: #4DFAAD;
     border-radius: 25px;
-    padding: 20px;
-    margin-bottom: 0%;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 20px;
+    /* padding: 20px; */
+    /* margin-bottom: 0%; */
+    /* margin-left: 0%; */
+    /* margin-right: 0%; */
+    /* margin-top: 20px; */
 }
 
 .flex-container-top {
@@ -95,11 +97,12 @@ body {
 .nav {
     font-size:medium;
     background-color: white;
-    padding-left: 37%;
+    /* padding-left: 3%; */
+    width: 100%;
     font-weight: 700;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-right: 37%;
+    /* padding-right: 3%; */
     margin-left: 0px;
     margin-right: 0px;
 }
