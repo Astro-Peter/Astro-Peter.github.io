@@ -2,6 +2,12 @@ body {
     background-color: #B0FA4D;
 }
 
+@media screen and (orientation: portrait) {
+    .button-header {
+        background-color: aquagit;
+    }
+}
+
 .page-link {
     flex: 1;
     margin: 1%;
@@ -11,7 +17,7 @@ body {
 
 .nav {
     flex: 1;
-    text-align: left;
+    /* text-align: left; */
     margin: 2%;
     /* padding: 1%; */
     /* width: 2    0%; */
@@ -28,15 +34,6 @@ body {
     /* margin-left: 0%; */
     /* margin-right: 0%; */
     /* margin-top: 20px; */
-}
-
-.flex-container-top {
-    width: 100%;
-    display: flex;         /* Enable Flexbox */
-    flex-wrap: nowrap;        /* Prevent wrapping */
-    justify-content: space-between; /* Optional: Distribute items evenly */
-    gap: 10px;                /* Add spacing between items */
-    overflow-x: auto;    
 }
 
 .flex-container {
@@ -82,6 +79,29 @@ body {
     /* margin-right: 20px; */
     background-color: white;
 }
+.striped-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+ 
+.striped-table th, .striped-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.striped-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.striped-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.striped-table th {
+  background-color: #4CAF50;
+  color: #fff;
+}
 
 #finished-predictions {
     flex: 3;
@@ -103,7 +123,7 @@ body {
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* padding-right: 3%; */
-    margin-left: 0px;
+    /* margin-left: 0px; */
     margin-right: 0px;
 }
 
