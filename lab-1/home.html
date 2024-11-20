@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head >
+    <script src="scripts/button_highlight.js"></script>
+    <script src="scripts/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sports Game Results Predictor">
@@ -15,11 +17,11 @@
             <nav>
                 <table width="100%" cellpadding="0" cellspacing="0">
                     <tr>
-                        <td><button class="button nav" href="">Home</button></td>
-                        <td><button class="button nav" href="standings.html">Popular</button></td>
-                        <td><button class="button nav" href="predictions.html">Predictions</button></td>
-                        <td><button class="button nav" href="standings.html">User Leagues</button></td>
-                        <td><button class="button nav" href="contact.html">About</button></td>
+                        <td><a href="home.html"><button class="nav" href="home.html">Home</button></a></td>
+                        <td><a href="standings.html"><button class="nav" href="standings.html">Popular</button></a></td>
+                        <td><a href="predictions.html"><button class="nav" href="predictions.html">Predictions</button></a></td>
+                        <td><a href="user_leagues.html"><button class="nav" href="user_leagues.html">User Leagues</button></a></td>
+                        <td><a href="contact.html"><button class="nav" href="contact.html">About</button></a></td>
                     </tr>
                 </table>
                 
@@ -209,6 +211,7 @@
         </section>
         <footer>
             <p>&copy; Sports Predictor</p>
+            <p class="load-time"></p>
         </footer>
     </main>
 </body>

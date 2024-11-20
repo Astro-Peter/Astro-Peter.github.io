@@ -30,6 +30,7 @@ header {
 .finished-match {
     border-top: 4px solid black;
     padding-top: 4px;
+
 }
 
 .team-logo {
@@ -65,4 +66,13 @@ header {
     padding-right: 37%;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.nav:hover {
+    background-color: red;
+}
+
+.nav.active {
+    background-color: turquoise;
+    color: #333;
 }
