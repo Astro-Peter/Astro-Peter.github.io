@@ -8,7 +8,22 @@
     <meta name="description" content="Sports Game Results Predictor">
     <meta name="keywords" content="sports, leagues, NFL, NBA, week results, predictor, football">
     <title>Sports Game Results Predictor</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>>
+    <script>
+        var sound = new Howl({
+      src: ['img/locomotion-soundtrack_cruel-angel-s-thesis-neon-genesis-evangelion-op.mp3'],
+      volume: 0.5,
+      onend: function () {
+        alert('Finished!');
+      }
+    });
+
+    function play() {
+        sound.stop();
+        sound.play();
+    }
+
+    </script>
 </head>
 <body>
     <main>
@@ -22,6 +37,22 @@
                 <a class="page-link" href="contact.html"><button class="nav right-nav" href="contact.html">About</button></a>
             </div>
         </header>
+
+        <h1>Dynamic List</h1>
+
+        <select id="itemSelect">
+            <option value="KCTPB">Kansas - Bucs</option>
+            <option value="BRPS">Ravens - Steelers</option>
+        </select><br><br>
+        <select id="winnerSelect">
+            <option value="winner">1</option>
+            <option value="loser">2</option>
+        </select>
+            <button id="addItemButton" onclick=play()>Add Prediction</button>
+    
+        <ul id="dynamicList"></ul>
+    
+        <script src="scripts/schedule.js"></script>
     <footer>
         <p>&copy; Sports Predictor</p>
         <p class="load-time"></p>
